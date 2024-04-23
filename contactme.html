@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Lucas' site</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta name="description" content="Lucas' site" />
+		<link rel="icon" href="assets/images/favicon.png" />
+		<link rel="stylesheet" href="assets/styles/shared.css" />
+		<!-- Import Jetbrains Mono font -->
+		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono" rel="stylesheet">
+
+		<!-- Import Source Code Pro font-->
+		<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro" rel="stylesheet">
+
+		<script src="scripts/script.js" defer></script>
+	</head>
+
+	<body class="shared">
+		<nav class="navbar"></nav>
+		<container>
+			<h1 id="table-header"> Contact me!</h1>
+			<table>
+				<tr>
+					<th><label for="email">your email:</label></th>
+					<td><input type="email" id="sender-email" placeholder="email@example.com"></td>
+				</tr>
+				<tr>
+					<th><label for="subject">subject:</label></th>
+					<td><input type="text" id="subject" placeholder="subject"></td>
+				</tr>
+				<tr>
+					<th><label for="message">message:</label></th>
+					<td><textarea id="message" name="message" rows="5" placeholder="message goes here"></textarea></td>
+				</tr>
+				<tr>
+					<th></th>
+					<td><button id="email-button">send email</button></td>
+				</tr>
+			</table>
+		</container>
+	</body>
+
+</html>

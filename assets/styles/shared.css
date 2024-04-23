@@ -1,0 +1,160 @@
+* {
+	font-family: "JetBrains Mono";
+}
+
+body {
+	background-color: #292e39;
+	font-size: 62.5%;
+}
+
+.shared {
+	margin-left: 250px;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+}
+
+/* Removes the <a> formatting, adds margin space and formats the font */
+.links {
+	margin: 35px;
+	font-size: 2.4em;
+	font-family: "JetBrains Mono";
+	white-space: nowrap;
+	color: #88C0D0;
+	text-decoration: none;
+}
+
+/*	Removes formatting from lists like the dot market and indent.
+Also adds space between <li> elements.*/
+.nav-ul {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	list-style-type: none;
+	padding: 0;
+}
+
+.navbar {
+	text-align: left;
+	background-color: #4C566A;
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding-top: 20px;
+}
+
+
+.middle-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#selfie {
+	/*	
+	Made a kinda of drop design because I saw it on Fedora's logo 
+	And it seems really nice to me.
+	*/
+	border-radius: 50% 50% 50% 0;
+	border: 5px solid #434C5E;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: 150px;
+}
+
+#name-header {
+	font: 6em "JetBrains Mono";
+	text-align: center;
+	font-variant: small-caps;
+	font-weight: bold;
+	color: #d8dee9
+}
+
+#name-footer {
+	font: italic 1.5em "JetBrains Mono";
+	text-align: center;
+	color: #cbcdd1;
+	white-space: nowrap;
+	/* Makes it so the text doesn't line break */
+	margin-bottom: 2.5cm;
+}
+
+.links-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+@media screen and (max-width: 900px) {
+	.links-container {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+button,
+label,
+p {
+	font-size: 1.5em;
+}
+
+h1 {
+	color: #81A1C1;
+	font-size: 3em;
+	font-family: "Jetbrains Mono";
+	overflow: hidden;
+}
+
+#table-header {
+	text-align: right;
+}
+
+p {
+	color: #d8dee9;
+	text-align: justify;
+	margin: 50px 150px;
+	min-width: 250px;
+	max-width: 650px;
+}
+
+.links-images {
+	margin: 10px;
+	width: auto;
+	height: 64px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px 1px #5E81AC;
+}
+
+label {
+	color: #d8dee9;
+}
+
+th {
+	text-align: left;
+}
+
+textarea {
+	width: 97%;
+	height: 100%;
+	resize: none;
+}
+
+footer {
+	height: 55px;
+}
+
+hr {
+	margin: 50px;
+	border: 0px;
+	background-color: #4C566A;
+	height: 1px;
+}
+
+.text-link {
+	color: #88C0D0;
+}
